@@ -1,16 +1,9 @@
-export const App = () => {
+import {MainContainer} from "./App.styles";
+  
+export const App = ({children}) => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <MainContainer>
+      {children}
+    </MainContainer>
   );
 };
