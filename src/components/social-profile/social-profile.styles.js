@@ -51,20 +51,20 @@ export const Stats=styled.ul `
     list-style: none;
     height: 70px;
     padding: 0;
-    border-top: 1px solid #e7ecf2;
-    background-color: rgb(197, 197, 197, 0.29);
     display: flex;
    `;
    
 
 export const StatsLi=styled.li `
     display: flex;
-    width: 100px;
-    margin: 0;
-    justify-content: center;
+    padding: 15px 0px;
+    align-items: center;
     flex-direction: column;
-    border-right: 1px solid #e7ecf2;
-    background-color: #f7f7f7;
+    flex: 1;
+    border: 1px solid #e7ecf2;
+    border-bottom: none;
+    
+  
     `;
 
 export const StatsLab=styled.span `
@@ -76,7 +76,8 @@ export const StatsQ=styled.span `
     font-size: 15px;
     font-weight: 700;
     color: #5d5b5a;
-    padding-top: 4px;
+    margin-top: 4px;
+   
     `;
 
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import {
     SocialProf,
     SocialCont,
@@ -65,4 +65,12 @@ export const SocialProfile = ({
     </SocialProf>
         </>
     );
+}
+
+SocialProfile.propTypes = {
+    stats: PropTypes.object.isRequired,
+    userName: PropTypes.string,
+    tag: PropTypes.string,
+
+
 }
