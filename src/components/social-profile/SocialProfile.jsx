@@ -9,6 +9,8 @@ import {
     SocialLoc,
     Stats,
     StatsLi,
+    StatsLab,
+    StatsQ,
 }   from './social-profile.styles';
 
 export const SocialProfile = ({
@@ -18,7 +20,7 @@ export const SocialProfile = ({
     userAvatar,
     userStats,
 }) => {
-    return (
+    return (<>
         <SocialProf className="profile">
            <SocialCont className="description"> 
                <SocialAv className="avatar" alt="User avatar" src={userAvatar}/>
@@ -32,12 +34,35 @@ export const SocialProfile = ({
                    {userLocation}
                </SocialLoc>
             </SocialCont>
-        </SocialProf>
         
+
         <Stats className="stats">
             <StatsLi>
-
+                <StatsLab className="label">
+                    Followers
+                </StatsLab>
+                <StatsQ className="quantity">
+                    {userStats.followers}
+                </StatsQ>
+            </StatsLi>
+            <StatsLi>
+                <StatsLab className="label">
+                    Views
+                </StatsLab>
+                <StatsQ className="quantity">
+                    {userStats.views}
+                </StatsQ>  
+            </StatsLi>
+            <StatsLi>
+                <StatsLab className="label">
+                    Likes
+                </StatsLab>
+                <StatsQ className="quantity">
+                    {userStats.likes}
+                </StatsQ>
             </StatsLi>
         </Stats>
+    </SocialProf>
+        </>
     );
 }
