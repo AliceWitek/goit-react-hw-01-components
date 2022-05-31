@@ -68,9 +68,9 @@ export const SocialProfile = ({
 }
 
 SocialProfile.propTypes = {
-    stats: PropTypes.object.isRequired,
+    userStats: PropTypes.object.isRequired,
     userName: PropTypes.string,
-    tag: PropTypes.string,
+    userTag: PropTypes.string,
 
 
 }
